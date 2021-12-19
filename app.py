@@ -3,8 +3,8 @@ from flask import  Flask,render_template,request
 app=Flask(__name__)
 @app.route("/")
 def index():
-    #image=request.args.get("images/cover.jpg")
-    return render_template("basic.html",image=image)
+
+    return render_template("basic.html")
 @app.route("/solids")
 def solids():  
     return render_template("solids.html")
